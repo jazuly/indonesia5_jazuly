@@ -56,11 +56,13 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - xml (enabled by default - don't turn it off)
 
 ## How to use
-composer install
-php spark migrate
-php spark serve
+- `composer install`
+- `php spark migrate`
+- `php spark serve`
 
-Route:
+- Route:
+```
+Register
 http://localhost:8080/api/register //POST
 {
     "name": "tes",
@@ -68,10 +70,13 @@ http://localhost:8080/api/register //POST
     "password": "123456789"
 }
 
+Login
 http://localhost:8080/api/login //POST
 {
     "email": "tes2@gmail.com",
     "password": "123456789"
 }
 
+Profile
 http://localhost:8080/api/profile //GET
+```
